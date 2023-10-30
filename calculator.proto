@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package calculator;
+
+service Calculator {
+    rpc SquareRoot(SquareRootRequest) returns (SquareRootResponse) {}
+}
+
+message  SquareRootRequest  {
+    double  value= 1;
+}
+message  SquareRootResponse {
+    double  value= 1;
+}
+
